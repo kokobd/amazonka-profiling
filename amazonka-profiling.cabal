@@ -1,0 +1,33 @@
+cabal-version: 3.0
+name:          amazonka-profiling
+version:       0.1.0.0
+
+-- synopsis:
+-- description:
+license:       BSD-3-Clause
+author:        kokobd
+maintainer:    contact@zelinf.net
+
+-- copyright:
+category:      Web
+build-type:    Simple
+
+executable amazonka-profiling
+  ghc-options:      -Wall -threaded -rtsopts
+  main-is:          Main.hs
+
+  -- other-modules:
+  -- other-extensions:
+  build-depends:
+    , amazonka              ^>=2.0
+    , amazonka-s3           ^>=2.0
+    , base
+    , generic-lens
+    , lens
+    , MonadRandom
+    , text
+    , transformers
+    , unordered-containers
+
+  hs-source-dirs:   exe
+  default-language: GHC2021
